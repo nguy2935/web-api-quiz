@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.btnHeader {
+    color: blueviolet;
+    background: white;
+    border: 0;
+}
