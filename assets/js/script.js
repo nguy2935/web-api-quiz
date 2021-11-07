@@ -1,4 +1,13 @@
 // timer //
+var times = 60;
+var timers = setInterval(function(){
+    if(times <= 0){
+        clearInterval(timers);
+    }
+    document.getElementById("progress").value = 10 - timeleft;
+    times -= 1;
+}, 1000);
+
 var timer = duration, minutes, seconds; 
 setInterval(function() {
     minutes = parseInt(timer / 60, 10);
@@ -12,6 +21,12 @@ setInterval(function() {
         timer = duration;
         }
     }, 1000);
+}
+
+window.onload = function() {
+    var oneMinute = 60;
+    display = document.querySelector('#time');
+    startTimer(oneMinute, display);
 }
 
 // timer expired popout message //
