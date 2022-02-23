@@ -4,10 +4,24 @@
     box-sizing: border-box;
 }
 
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+h1 {
+    text-align: center;
 }
 
 .btnHeader {
@@ -16,14 +30,26 @@ header {
     border: 0;
 }
 
-#container {
+#quiz-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+    width: 25%;
+    margin: 10%;
+}
+
+#stuff-container {
+    width: 100%;
+}
+
+.answersBtns {
+    display: flex;
+    flex-direction: column;
 }
 
 .btn {
-    background: purple;
+    background: #441466;
     color:white;
+    border-radius: 5px;
 }

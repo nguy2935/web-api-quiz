@@ -33,3 +33,20 @@ window.onload = function() {
 if ( < 0) {
     
 }
+
+// high score button
+var viewHighScoresBtnEl = document.getElementById('view-high-scores');
+
+// Start Quiz Button
+var startQuizBtnEl = document.getElementById('start-quiz');
+startQuizBtnEl.addEventListener('click', startQuiz)
+function startQuiz() {
+
+}
+
+// questions
+
+// answers buttons
+
+// submit button
+var submitBtnEl = document.getElementById('submitScore');
